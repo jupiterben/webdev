@@ -1,0 +1,36 @@
+{
+  "name": "@myspace/mylib",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "dist/mylib.umd.js",
+  "module": "dist/mylib.es5.js",
+  "typings": "dist/types/mylib.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build-types": "tsc -p ./tsconfig.d.json",
+    "test": "jest --coverage",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jupiterben/webdev.git"
+  },
+  "author": "jupiterben",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jupiterben/webdev/issues"
+  },
+  "homepage": "https://github.com/jupiterben/webdev#readme",
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {}
+}
